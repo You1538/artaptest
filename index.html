@@ -14,24 +14,12 @@
         <!-- マウスカーソル -->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .raycastable"> </a-entity>
 
-
-
-
         <a-assets timeout="10000">
             <a-asset-item id="daiwa" src="assets/kingyodaiwa.glb"></a-asset-item>
             <a-asset-item id="cube" src="assets/cube.glb"></a-asset-item>
             <a-asset-item id="apple" src="assets/apple.glb"></a-asset-item>
             <a-asset-item id="castle" src="assets/test02.glb"></a-asset-item>
-        </a-assets>
-
-        <a-box position="5 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-
-        <a-light
-        type="directional"
-        color="#FFF"
-        intensity="3"
-        position="0 18 5">
-      </a-light>
+        </a-assets>>
 
         <a-marker type="pattern" url="armarker.patt">
         <!-- クリックしたいentityグループ -->
@@ -39,16 +27,10 @@
             animation__rotation="property:  rotation;    to: 0 360 0;   dur: 4000; easing: linear; loop: true; startEvents: mouseup">
             <!-- 3Dモデル -->
             <a-entity gltf-model="#apple" position="0 0 0" rotation="0 -9 0 " scale="5 5 5"></a-entity>
-
-
-
-
-
             <!-- 当たり判定オブジェクト -->
             <a-entity position="0 -0.5 0" hit-box>
                 <a-entity class="raycastable" geometry="primitive:cylinder" material="color:red; opacity: 0.5"
                     scale="0.27 0.5 0.27" position="0 0.73 0" visible="false"></a-entity>
-
         </a-marker>
 
         <a-entity camera></a-entity>
