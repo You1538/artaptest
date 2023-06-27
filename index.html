@@ -27,19 +27,19 @@
             <a-entity gltf-model="#apple" rotation="0 0 0 " scale="5 5 5"></a-entity>
             <!-- 当たり判定オブジェクト -->
             <a-entity hit-box>
-                <a-entity class="raycastable" position"0 0 0" geometry="primitive:box" material="color:red; opacity: 0.5" rotation="0 0 90" scale="2 0.05 2" visible="true">
+                <a-entity class="raycastable" position"0 0 0" geometry="primitive:box" material="color:red; opacity: 0.5" rotation="0 0 90" scale="1.6 0.05 1.6" visible="true">
                 </a-entity>
         </a-marker>
 
                <!-- マーカーを設定する -->
         <a-marker type="pattern" url="snow.patt">
         <!-- クリックしたいentityグループ -->
-          <a-entity rotation="-90 0 0" scale="1 1 1" animation__rotation="property:  rotation;    to: -450 0 0;   dur: 4000; easing: linear; loop: true; startEvents: mouseup">
+          <a-entity rotation="-90 0 0" scale="1 1 1" animation__rotation="property:  rotation;    to: -90 0 360;   dur: 4000; easing: linear; loop: true; startEvents: mouseup">
             <!-- 3Dモデル -->
             <a-entity gltf-model="#daiwa" rotation="0 0 0 " scale="1 1 1"></a-entity>
             <!-- 当たり判定オブジェクト -->
             <a-entity hit-box>
-                <a-entity class="raycastable" position"0 0 0" geometry="primitive:box" material="color:red; opacity: 0.5" rotation="0 0 90" scale="2 0.05 2" visible="true">
+                <a-entity class="raycastable" position"0 0 0" geometry="primitive:box" material="color:red; opacity: 0.5" rotation="0 90 90" scale="1.6 0.05 1.6" visible="true">
                 </a-entity>
         </a-marker>
 
